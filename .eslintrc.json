@@ -19,7 +19,7 @@
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
-    "space-before-function-paren": "off",
+    // "space-before-function-paren": "off",
     "prefer-arrow-callback": [
       "error",
       { "allowNamedFunctions": true, "allowUnboundThis": true }
