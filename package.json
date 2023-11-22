@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "npx prettier --write \"**/*.{css,md}\" &&  next lint --fix"
+    "start": "next start"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
