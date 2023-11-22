@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx prettier --write \"**/*.{css,md}\" &&  next lint --fix",
-    "lint-staged": "lint-staged"
+    "lint": "npx prettier --write \"**/*.{css,md}\" &&  next lint --fix"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
@@ -48,5 +47,20 @@
   "author": {
     "email": "canhanga96@gmail.com",
     "name": "Domingos Canhanga"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,md}": [
+      "prettier --write"
+    ]
   }
+  
 }

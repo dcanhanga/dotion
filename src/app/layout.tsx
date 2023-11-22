@@ -9,7 +9,7 @@ const description =
 export const metadata: Metadata = {
   title: 'Dotion',
   description,
-};
+}
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -17,6 +17,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className={inter.className}>{children}</body>
     </html>
   )
-};
+}
 
 export default RootLayout;
