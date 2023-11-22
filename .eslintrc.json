@@ -2,9 +2,12 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
+    "plugin:promise/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["next/core-web-vitals","simple-import-sort","plugin:promise/recommended", "import","prettier"],
+
+  "plugins": ["simple-import-sort","promise", "import","prettier"],
+
   "rules": {
     "react/prefer-stateless-function": [
       "error",
@@ -19,7 +22,7 @@
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
-    // "space-before-function-paren": "off",
+    "space-before-function-paren": "off",
     "prefer-arrow-callback": [
       "error",
       { "allowNamedFunctions": true, "allowUnboundThis": true }
@@ -42,9 +45,6 @@
     "promise/avoid-new": "warn",
     "promise/no-new-statics": "error",
     "promise/no-return-in-finally": "warn",
-    "promise/valid-params": "warn",
-    "parserOptions":{
-      "project": "./tsconfig.json"
-    }
+    "promise/valid-params": "warn"
   }
 }

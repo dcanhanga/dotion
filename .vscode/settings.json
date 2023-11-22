@@ -2,5 +2,9 @@
   "conventionalCommits.scopes": [
     "Doc package.json",
     "Folder organization"
+  ],
+  "cSpell.words": [
+    "dotion",
+    "Dotion"
   ]
 }
