@@ -4,7 +4,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["next/core-web-vitals","simple-import-sort","plugin:promise/recommended", "prettier"],
+  "plugins": ["next/core-web-vitals","simple-import-sort","plugin:promise/recommended", "import","prettier"],
   "rules": {
     "react/prefer-stateless-function": [
       "error",
@@ -16,6 +16,9 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
     "space-before-function-paren": "off",
     "prefer-arrow-callback": [
       "error",
