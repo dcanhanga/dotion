@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "npx prettier --write \"**/*.{css,md,html,sass}\" &&  next lint --fix"
+    "lint": "npx prettier --write \"**/*.{css,md}\" &&  next lint --fix"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.292.0",
