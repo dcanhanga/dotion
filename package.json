@@ -6,11 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx prettier --write \"**/*.{css,md}\" &&  next lint --fix",
+    "lint": "next lint --fix",
+    "format": "npx prettier --write \"**/*.{css,md}\" && next lint --fix ",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.css": [
+    "*.{css,md}": [
       "npx prettier --write"
     ],
     "*.{js,jsx,ts,tsx}": [
