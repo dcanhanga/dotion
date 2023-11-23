@@ -9,14 +9,14 @@ const description =
 export const metadata: Metadata = {
   title: 'Dotion',
   description,
-}
+};
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="pt-AO">
       <body className={inter.className}>{children}</body>
     </html>
-  )
-}
+  );
+};
 
 export default RootLayout;
